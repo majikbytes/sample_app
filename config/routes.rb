@@ -6,9 +6,12 @@ SampleApp::Application.routes.draw do
   match '/signin', :to => 'sessions#new'
   match 'signout', :to => 'sessions@destroy'
 
+  match '/geotest', :to => 'pages#geotest'
   match '/contact', :to => 'pages#contact'
   match '/about' , :to => 'pages#about'
   match '/help', :to => 'pages#help'
+
+  match '/cphome', :to => 'carpoolr#home'
   
   root :to => 'pages#home'
 

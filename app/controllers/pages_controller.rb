@@ -15,4 +15,7 @@ class PagesController < ApplicationController
     @title = "Help"
   end
 
+  def geotest
+  end
+
 end
